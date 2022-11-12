@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedController.swift
 //  ParfotekaApp2
 //
 //  Created by air on 12.11.22.
@@ -7,16 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class FeedController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        view.backgroundColor = .blue
+        view.backgroundColor = .systemBlue
     }
-
-
 }
-
