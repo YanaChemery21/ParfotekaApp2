@@ -21,6 +21,10 @@
 		45161ED7291FAE1200B110BF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45161ED6291FAE1200B110BF /* ProfileController.swift */; };
 		459229C9291FE1EE004F7EAB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459229C8291FE1EE004F7EAB /* FeedCell.swift */; };
 		459229CB291FE402004F7EAB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459229CA291FE402004F7EAB /* Extensions.swift */; };
+		459229CE29200C2A004F7EAB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459229CD29200C2A004F7EAB /* LoginController.swift */; };
+		459229D029200C52004F7EAB /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459229CF29200C52004F7EAB /* RegistrationController.swift */; };
+		45B2CC4A29212A5F00611365 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2CC4929212A5F00611365 /* AuthenticationViewModel.swift */; };
+		45FDDF2229210C9B002AE195 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDDF2129210C9A002AE195 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		45161ED6291FAE1200B110BF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		459229C8291FE1EE004F7EAB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		459229CA291FE402004F7EAB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		459229CD29200C2A004F7EAB /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		459229CF29200C52004F7EAB /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		45B2CC4929212A5F00611365 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		45FDDF2129210C9A002AE195 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		45161EC8291FA7CE00B110BF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				459229CC29200BEE004F7EAB /* Authentication */,
 				45161ECC291FA9A600B110BF /* MainTabConroller.swift */,
 				45161ECE291FAD4700B110BF /* FeedController.swift */,
 				45161ED0291FAD7A00B110BF /* SearchController.swift */,
@@ -120,6 +129,7 @@
 		45161EC9291FA7D300B110BF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				45B2CC4929212A5F00611365 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				459229C8291FE1EE004F7EAB /* FeedCell.swift */,
+				45FDDF2129210C9A002AE195 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +148,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		459229CC29200BEE004F7EAB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				459229CD29200C2A004F7EAB /* LoginController.swift */,
+				459229CF29200C52004F7EAB /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,10 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FDDF2229210C9B002AE195 /* CustomTextField.swift in Sources */,
 				45161EB7291FA0CB00B110BF /* ViewController.swift in Sources */,
+				459229CE29200C2A004F7EAB /* LoginController.swift in Sources */,
 				459229C9291FE1EE004F7EAB /* FeedCell.swift in Sources */,
 				45161ED3291FADAF00B110BF /* ImageSelectorController.swift in Sources */,
 				45161ED5291FADE900B110BF /* NotificationController.swift in Sources */,
+				45B2CC4A29212A5F00611365 /* AuthenticationViewModel.swift in Sources */,
 				45161ED1291FAD7A00B110BF /* SearchController.swift in Sources */,
 				45161ECD291FA9A600B110BF /* MainTabConroller.swift in Sources */,
 				45161ED7291FAE1200B110BF /* ProfileController.swift in Sources */,
@@ -221,6 +244,7 @@
 				45161EB3291FA0CB00B110BF /* AppDelegate.swift in Sources */,
 				459229CB291FE402004F7EAB /* Extensions.swift in Sources */,
 				45161EB5291FA0CB00B110BF /* SceneDelegate.swift in Sources */,
+				459229D029200C52004F7EAB /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
