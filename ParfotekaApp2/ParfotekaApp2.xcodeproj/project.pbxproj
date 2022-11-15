@@ -28,6 +28,8 @@
 		45D46B5C292245FF00DB282B /* imageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D46B5B292245FF00DB282B /* imageUploader.swift */; };
 		45D46B5E2922462400DB282B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D46B5D2922462400DB282B /* AuthService.swift */; };
 		45D70C6F2ADB1198EADC9573 /* Pods_ParfotekaApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990D962FB36297E840BB7C9 /* Pods_ParfotekaApp2.framework */; };
+		45F494C22923C8EA001C6F04 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F494C12923C8EA001C6F04 /* ProfileCell.swift */; };
+		45F494C42923C908001C6F04 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F494C32923C908001C6F04 /* ProfileHeader.swift */; };
 		45FDDF2229210C9B002AE195 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDDF2129210C9A002AE195 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		45B2CC4F292163BE00611365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		45D46B5B292245FF00DB282B /* imageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploader.swift; sourceTree = "<group>"; };
 		45D46B5D2922462400DB282B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		45F494C12923C8EA001C6F04 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		45F494C32923C908001C6F04 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		45FDDF2129210C9A002AE195 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		52F5D15F5C0D8FF2B1841B44 /* Pods-ParfotekaApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParfotekaApp2.debug.xcconfig"; path = "Target Support Files/Pods-ParfotekaApp2/Pods-ParfotekaApp2.debug.xcconfig"; sourceTree = "<group>"; };
 		75C8A2EB5A06835218938A09 /* Pods-ParfotekaApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParfotekaApp2.release.xcconfig"; path = "Target Support Files/Pods-ParfotekaApp2/Pods-ParfotekaApp2.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		45161ECA291FA7E100B110BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45F494C52923C911001C6F04 /* Profile */,
 				459229C8291FE1EE004F7EAB /* FeedCell.swift */,
 				45FDDF2129210C9A002AE195 /* CustomTextField.swift */,
 			);
@@ -181,6 +186,15 @@
 				459229CF29200C52004F7EAB /* RegistrationController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		45F494C52923C911001C6F04 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				45F494C12923C8EA001C6F04 /* ProfileCell.swift */,
+				45F494C32923C908001C6F04 /* ProfileHeader.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		C333AF911F2DE0A63702F645 /* Pods */ = {
@@ -309,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FDDF2229210C9B002AE195 /* CustomTextField.swift in Sources */,
+				45F494C42923C908001C6F04 /* ProfileHeader.swift in Sources */,
 				45161EB7291FA0CB00B110BF /* ViewController.swift in Sources */,
 				459229CE29200C2A004F7EAB /* LoginController.swift in Sources */,
 				459229C9291FE1EE004F7EAB /* FeedCell.swift in Sources */,
@@ -323,6 +338,7 @@
 				459229CB291FE402004F7EAB /* Extensions.swift in Sources */,
 				45D46B5C292245FF00DB282B /* imageUploader.swift in Sources */,
 				45D46B5E2922462400DB282B /* AuthService.swift in Sources */,
+				45F494C22923C8EA001C6F04 /* ProfileCell.swift in Sources */,
 				45161EB5291FA0CB00B110BF /* SceneDelegate.swift in Sources */,
 				459229D029200C52004F7EAB /* RegistrationController.swift in Sources */,
 			);

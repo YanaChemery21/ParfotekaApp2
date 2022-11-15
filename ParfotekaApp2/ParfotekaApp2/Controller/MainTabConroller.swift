@@ -46,7 +46,11 @@ class MainTabController: UITabBarController {
         
         let notifications = templeteNavigationController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_selected") , rootViewController: NotificationsController())
         
-        let profile = templeteNavigationController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected") , rootViewController: ProfileController())
+        let profileLayout = UICollectionViewFlowLayout()
+        
+        let profile = templeteNavigationController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selectedImage: #imageLiteral(resourceName: "profile_selected") , rootViewController: ProfileController(collectionViewLayout: profileLayout))
+        
+        
         viewControllers = [feed, search, imageSelector, notifications, profile]
         
         tabBar.tintColor = .black
