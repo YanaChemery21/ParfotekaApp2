@@ -24,6 +24,10 @@
 		459229CE29200C2A004F7EAB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459229CD29200C2A004F7EAB /* LoginController.swift */; };
 		459229D029200C52004F7EAB /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459229CF29200C52004F7EAB /* RegistrationController.swift */; };
 		45B2CC4A29212A5F00611365 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2CC4929212A5F00611365 /* AuthenticationViewModel.swift */; };
+		45B2CC50292163BE00611365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45B2CC4F292163BE00611365 /* GoogleService-Info.plist */; };
+		45D46B5C292245FF00DB282B /* imageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D46B5B292245FF00DB282B /* imageUploader.swift */; };
+		45D46B5E2922462400DB282B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D46B5D2922462400DB282B /* AuthService.swift */; };
+		45D70C6F2ADB1198EADC9573 /* Pods_ParfotekaApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990D962FB36297E840BB7C9 /* Pods_ParfotekaApp2.framework */; };
 		45FDDF2229210C9B002AE195 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FDDF2129210C9A002AE195 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +51,13 @@
 		459229CD29200C2A004F7EAB /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		459229CF29200C52004F7EAB /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		45B2CC4929212A5F00611365 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		45B2CC4F292163BE00611365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45D46B5B292245FF00DB282B /* imageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploader.swift; sourceTree = "<group>"; };
+		45D46B5D2922462400DB282B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		45FDDF2129210C9A002AE195 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		52F5D15F5C0D8FF2B1841B44 /* Pods-ParfotekaApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParfotekaApp2.debug.xcconfig"; path = "Target Support Files/Pods-ParfotekaApp2/Pods-ParfotekaApp2.debug.xcconfig"; sourceTree = "<group>"; };
+		75C8A2EB5A06835218938A09 /* Pods-ParfotekaApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParfotekaApp2.release.xcconfig"; path = "Target Support Files/Pods-ParfotekaApp2/Pods-ParfotekaApp2.release.xcconfig"; sourceTree = "<group>"; };
+		A990D962FB36297E840BB7C9 /* Pods_ParfotekaApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParfotekaApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +65,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D70C6F2ADB1198EADC9573 /* Pods_ParfotekaApp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CE3CB87110C552C8BFCE75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A990D962FB36297E840BB7C9 /* Pods_ParfotekaApp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		45161EA6291FA0CB00B110BF = {
 			isa = PBXGroup;
 			children = (
 				45161EB1291FA0CB00B110BF /* ParfotekaApp2 */,
 				45161EB0291FA0CB00B110BF /* Products */,
+				C333AF911F2DE0A63702F645 /* Pods */,
+				3CE3CB87110C552C8BFCE75C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +114,7 @@
 				45161EBB291FA0CD00B110BF /* Assets.xcassets */,
 				45161EBD291FA0CD00B110BF /* LaunchScreen.storyboard */,
 				45161EC0291FA0CD00B110BF /* Info.plist */,
+				45B2CC4F292163BE00611365 /* GoogleService-Info.plist */,
 			);
 			path = ParfotekaApp2;
 			sourceTree = "<group>";
@@ -108,6 +130,8 @@
 		45161EC7291FA7C500B110BF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				45D46B5B292245FF00DB282B /* imageUploader.swift */,
+				45D46B5D2922462400DB282B /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -159,6 +183,15 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		C333AF911F2DE0A63702F645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52F5D15F5C0D8FF2B1841B44 /* Pods-ParfotekaApp2.debug.xcconfig */,
+				75C8A2EB5A06835218938A09 /* Pods-ParfotekaApp2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45161EC3291FA0CD00B110BF /* Build configuration list for PBXNativeTarget "ParfotekaApp2" */;
 			buildPhases = (
+				3DBCCD3282F8FE26BEF3CDA3 /* [CP] Check Pods Manifest.lock */,
 				45161EAB291FA0CB00B110BF /* Sources */,
 				45161EAC291FA0CB00B110BF /* Frameworks */,
 				45161EAD291FA0CB00B110BF /* Resources */,
+				41738CD82F777125DD27BE4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,12 +253,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				45161EBF291FA0CD00B110BF /* LaunchScreen.storyboard in Resources */,
+				45B2CC50292163BE00611365 /* GoogleService-Info.plist in Resources */,
 				45161EBC291FA0CD00B110BF /* Assets.xcassets in Resources */,
 				45161EBA291FA0CB00B110BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DBCCD3282F8FE26BEF3CDA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParfotekaApp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41738CD82F777125DD27BE4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParfotekaApp2/Pods-ParfotekaApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ParfotekaApp2/Pods-ParfotekaApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ParfotekaApp2/Pods-ParfotekaApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45161EAB291FA0CB00B110BF /* Sources */ = {
@@ -243,6 +321,8 @@
 				45161ECF291FAD4700B110BF /* FeedController.swift in Sources */,
 				45161EB3291FA0CB00B110BF /* AppDelegate.swift in Sources */,
 				459229CB291FE402004F7EAB /* Extensions.swift in Sources */,
+				45D46B5C292245FF00DB282B /* imageUploader.swift in Sources */,
+				45D46B5E2922462400DB282B /* AuthService.swift in Sources */,
 				45161EB5291FA0CB00B110BF /* SceneDelegate.swift in Sources */,
 				459229D029200C52004F7EAB /* RegistrationController.swift in Sources */,
 			);
@@ -320,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -374,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -386,6 +466,7 @@
 		};
 		45161EC4291FA0CD00B110BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F5D15F5C0D8FF2B1841B44 /* Pods-ParfotekaApp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +480,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +496,7 @@
 		};
 		45161EC5291FA0CD00B110BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C8A2EB5A06835218938A09 /* Pods-ParfotekaApp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,6 +510,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
