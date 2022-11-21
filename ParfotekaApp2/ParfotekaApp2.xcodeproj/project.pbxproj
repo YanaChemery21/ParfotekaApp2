@@ -36,6 +36,10 @@
 		45AB19B42927F75800393E18 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AB19B32927F75800393E18 /* PostViewModel.swift */; };
 		45B2CC4A29212A5F00611365 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2CC4929212A5F00611365 /* AuthenticationViewModel.swift */; };
 		45B2CC50292163BE00611365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45B2CC4F292163BE00611365 /* GoogleService-Info.plist */; };
+		45C9C651292B613B009DB847 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9C650292B613B009DB847 /* NotificationCell.swift */; };
+		45C9C653292B7022009DB847 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9C652292B7022009DB847 /* Notification.swift */; };
+		45C9C655292B7626009DB847 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9C654292B7626009DB847 /* NotificationService.swift */; };
+		45C9C657292BFF5B009DB847 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C9C656292BFF5B009DB847 /* NotificationViewModel.swift */; };
 		45D46B5C292245FF00DB282B /* imageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D46B5B292245FF00DB282B /* imageUploader.swift */; };
 		45D46B5E2922462400DB282B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D46B5D2922462400DB282B /* AuthService.swift */; };
 		45D70C6F2ADB1198EADC9573 /* Pods_ParfotekaApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A990D962FB36297E840BB7C9 /* Pods_ParfotekaApp2.framework */; };
@@ -82,6 +86,10 @@
 		45AB19B32927F75800393E18 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		45B2CC4929212A5F00611365 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		45B2CC4F292163BE00611365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45C9C650292B613B009DB847 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		45C9C652292B7022009DB847 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		45C9C654292B7626009DB847 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		45C9C656292BFF5B009DB847 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		45D46B5B292245FF00DB282B /* imageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploader.swift; sourceTree = "<group>"; };
 		45D46B5D2922462400DB282B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		45F494C12923C8EA001C6F04 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -175,6 +183,7 @@
 				4575212A29240E860080C8A6 /* UserService.swift */,
 				45AB19AF2927D80200393E18 /* PostService.swift */,
 				45FD69DD292A76D800BA827F /* CommentService.swift */,
+				45C9C654292B7626009DB847 /* NotificationService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 				45AB19A729250CEE00393E18 /* UserCellViewModel.swift */,
 				45AB19B32927F75800393E18 /* PostViewModel.swift */,
 				45FD69E1292A84B100BA827F /* CommentViewModel.swift */,
+				45C9C656292BFF5B009DB847 /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -216,6 +226,7 @@
 				45AB19A52924FAE400393E18 /* UserCell.swift */,
 				45FD69D7292A1DE000BA827F /* CommentCell.swift */,
 				45FD69DB292A2DC200BA827F /* CommentInputAccesoryView.swift */,
+				45C9C650292B613B009DB847 /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +237,7 @@
 				4575212E292413A40080C8A6 /* User.swift */,
 				45AB19B12927F1FA00393E18 /* Post.swift */,
 				45FD69DF292A7E2100BA827F /* Comment.swift */,
+				45C9C652292B7022009DB847 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FD69E2292A84B100BA827F /* CommentViewModel.swift in Sources */,
+				45C9C657292BFF5B009DB847 /* NotificationViewModel.swift in Sources */,
 				45AB19B42927F75800393E18 /* PostViewModel.swift in Sources */,
 				45FDDF2229210C9B002AE195 /* CustomTextField.swift in Sources */,
 				45F494C42923C908001C6F04 /* ProfileHeader.swift in Sources */,
@@ -385,6 +398,7 @@
 				45161ED3291FADAF00B110BF /* ImageSelectorController.swift in Sources */,
 				45FD69DE292A76D800BA827F /* CommentService.swift in Sources */,
 				45FD69E0292A7E2100BA827F /* Comment.swift in Sources */,
+				45C9C653292B7022009DB847 /* Notification.swift in Sources */,
 				45161ED5291FADE900B110BF /* NotificationController.swift in Sources */,
 				45B2CC4A29212A5F00611365 /* AuthenticationViewModel.swift in Sources */,
 				45AB19A62924FAE500393E18 /* UserCell.swift in Sources */,
@@ -400,6 +414,7 @@
 				45161EB3291FA0CB00B110BF /* AppDelegate.swift in Sources */,
 				459229CB291FE402004F7EAB /* Extensions.swift in Sources */,
 				45D46B5C292245FF00DB282B /* imageUploader.swift in Sources */,
+				45C9C655292B7626009DB847 /* NotificationService.swift in Sources */,
 				45AB19B22927F1FA00393E18 /* Post.swift in Sources */,
 				45D46B5E2922462400DB282B /* AuthService.swift in Sources */,
 				45FD69DC292A2DC200BA827F /* CommentInputAccesoryView.swift in Sources */,
@@ -407,6 +422,7 @@
 				4575212B29240E860080C8A6 /* UserService.swift in Sources */,
 				45F494C22923C8EA001C6F04 /* ProfileCell.swift in Sources */,
 				45161EB5291FA0CB00B110BF /* SceneDelegate.swift in Sources */,
+				45C9C651292B613B009DB847 /* NotificationCell.swift in Sources */,
 				459229D029200C52004F7EAB /* RegistrationController.swift in Sources */,
 				45FD69D8292A1DE000BA827F /* CommentCell.swift in Sources */,
 			);

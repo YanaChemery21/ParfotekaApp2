@@ -13,6 +13,8 @@ private let reuseIdentifier = "Cell"
 
 class FeedController: UICollectionViewController{
     
+    private let refresher = UIRefreshControl()
+    
     //MARK: - Lifecycle
     
     
@@ -33,6 +35,8 @@ class FeedController: UICollectionViewController{
     @objc func handleRefresh(){
         posts.removeAll()
         fetchPosts()
+        refresher.endRefreshing()
+
     }
     
     @objc func handleLogout(){
@@ -130,6 +134,13 @@ extension FeedController: UICollectionViewDelegateFlowLayout{
 //MARK: - FeedCellDelegate
 
 extension FeedController: FeedCellDelegate {
+    func cell(_ cell: FeedCell, wantsToShowProfileFor uid: String) {
+        UserService.fetchUser(withUid: uid) { user in
+            let controller = ProfileController(user: user)
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    
     
     func cell(_ cell: FeedCell, wantsToShowCommentsFor post: Post) {
         let controller = CommentController(post: post)
@@ -137,10 +148,12 @@ extension FeedController: FeedCellDelegate {
     }
     
     func cell(_ cell: FeedCell, didLike post: Post) {
+        guard let tab = tabBarController as? MainTabController else { return }
+        guard let user = tab.user else { return }
+        
         cell.viewModel?.post.didLike.toggle()
         
         if post.didLike {
-            
             PostService.unlikePost(post: post) { _ in
                 cell.likeButton.setImage(UIImage(named: "like_unselected"), for: .normal)
                 cell.likeButton.tintColor = .black
@@ -153,6 +166,8 @@ extension FeedController: FeedCellDelegate {
                 cell.likeButton.setImage(UIImage(named: "like_selected"), for: .normal)
                 cell.likeButton.tintColor = .black
                 cell.viewModel?.post.likes = post.likes + 1
+                
+                NotificationService.uploadNotification(toUid: post.ownerUid,fromUser: user, type: .like, post: post)
 
             }
         }
