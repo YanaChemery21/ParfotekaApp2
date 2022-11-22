@@ -56,6 +56,7 @@ class LoginController: UIViewController {
     private let forgotPaswordButton: UIButton = {
         let button = UIButton(type: .system)
         button.attributedTitle(firtsPart: "Forgot your password?", secondPart:"Get help signing In.")
+       // button.addTarget(self, action: #selector(handleShowResetPassword), for: .touchUpInside)
         return button
     }()
     
@@ -107,6 +108,11 @@ class LoginController: UIViewController {
         updateForm()
     }
     
+//    @objc func handleShowResetPassword() {
+//        let controller = ResetPasswordController()
+//        navigationController?.pushViewController(controller, animated: true)
+//    }
+    
   
     
     //MARK: - Helpers
@@ -150,3 +156,9 @@ extension LoginController: FormViewModel{
     
     
 }
+
+//extension LoginController: ResetPasswordControllerDelegate {
+//    func controllerDidSendResetPasswordLink(_ controller: ResetPasswordController) {
+//        navigationController?.popViewController(animated: true)
+//    }
+//}
