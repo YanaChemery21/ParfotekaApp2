@@ -4,8 +4,10 @@ Parfoteka is an application in which you can share your favorite perfume with fr
 
 
 This App includes:
-1)Create users
-2)Create a user profile
+1)Create users  
+
+2)Create a user profile. 
+
 3)Authenticate users with Firebase
 4)Search for users
 5)Upload posts
